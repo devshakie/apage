@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
+*{
+    background-color:plum;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    overflow-x: hidden;
+    
+    
+}
+.Navbar{
+    position:sticky;
+    top:0;
+}
+.nav-bar-menu-container{
+    display:none;
+    text-decoration: none;
+   
+}
+.navbar-links-container a{
+    font-weight:600;
+    float: right;
+    font-size:1.1rem ;
+    margin-right: 2rem;
+    color:black;
+   justify-content: space-between;
+   transition:0.2s;
+   cursor:pointer;
+
+
+
+}
+.navbar-links-container a:hover{
+    background-color: rgb(95, 62, 126);
+    color:beige;
+}
+a{
+    text-decoration: none;
+}
+.App{
+    min-height:100vh;
+    width:85vw;
+    max-width:1900px; 
+    margin:0rem auto;
+}
+.intro{
+    font-size: 4rem;
+    font-weight: 558;
+    padding-top:140px;
+    align-items: center;
+}
+.stmt{
+    font-size: 1.6em;
+    max-width:660px;
+
+
+}
+.image-container{
+    
+    margin-top:1rem;
+    padding-top:2px;
+    border-radius: 50%;
+    position: absolute;
+    max-width: 350px;
+    max-height: 350px;
+    top:140px;
+    right:-1.1px;
+    border-radius: 50%;
+    overflow: hidden;
+    left:750px;
+    border-style: dashed;
+    border-color: rgb(163, 56, 122);
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+   object-fit: cover; 
+   
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
